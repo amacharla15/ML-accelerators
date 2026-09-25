@@ -1,0 +1,3 @@
+22:  %19 = fmul reassoc nnan contract float %16, %18
+27:  %irguard.bc = fadd reassoc float %21, %23
+28:  %24 = fadd reassoc nnan contract float %19, %irguard.bc

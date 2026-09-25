@@ -1,0 +1,14 @@
+GPU: NVIDIA L4
+Kernel: guarded_mul_add
+N: 1048576 elements
+Warmup: 50 launches
+Measured: 300 launches per run
+Repeated runs: 5
+
+Result:
+strict median ~= 0.01120 ms
+contract median ~= 0.01120 ms
+speedup ~= 1.00x
+
+Conclusion:
+No measurable performance difference for this memory-bound kernel.

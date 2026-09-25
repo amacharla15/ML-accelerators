@@ -1,0 +1,16 @@
+=== GPU ===
+NVIDIA L4, 570.195.03
+
+=== LLVM ===
+Ubuntu clang version 21.1.8 (++20251221032842+2078da43e25a-1~exp1~20251221153008.77)
+Ubuntu LLVM version 21.1.8
+Ubuntu LLVM version 21.1.8
+
+=== PYTHON ===
+Python 3.11.10
+
+=== PACKAGES ===
+Name: openai
+Version: 3.19.2
+Name: cupy-cuda12x
+Version: 14.2.0

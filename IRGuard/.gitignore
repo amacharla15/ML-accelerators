@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+llvm-pass/build/
+*.agent.ll
+*.agent.opt.ll
+*.agent.opt.ptx

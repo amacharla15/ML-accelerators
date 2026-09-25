@@ -1,0 +1,36 @@
+{
+  "overall": {
+    "bare": {
+      "episodes": 50,
+      "verified": 50,
+      "minimal_repairs": 50,
+      "mean_repair_turns": 1.14,
+      "input_tokens": 10737,
+      "output_tokens": 9456
+    },
+    "counterexample": {
+      "episodes": 50,
+      "verified": 50,
+      "minimal_repairs": 50,
+      "mean_repair_turns": 1.2,
+      "input_tokens": 14540,
+      "output_tokens": 7533
+    }
+  },
+  "guarded_reassoc": {
+    "bare": {
+      "episodes": 10,
+      "verified": 10,
+      "minimal_repairs": 10,
+      "first_failure_fixed": 3,
+      "mean_repair_turns": 1.7
+    },
+    "counterexample": {
+      "episodes": 10,
+      "verified": 10,
+      "minimal_repairs": 10,
+      "first_failure_fixed": 10,
+      "mean_repair_turns": 2.0
+    }
+  }
+}

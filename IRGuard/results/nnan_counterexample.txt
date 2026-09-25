@@ -1,0 +1,11 @@
+input:  [nan  1. -2.]
+strict: [ 0.  2. -1.]
+nnan:   [nan  2. -1.]
+
+COUNTEREXAMPLE
+input: NaN
+expected: 0.0
+strict: 0.0
+nnan: nan
+
+VERIFICATION FAILED

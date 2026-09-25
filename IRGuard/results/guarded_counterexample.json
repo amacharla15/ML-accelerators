@@ -1,0 +1,57 @@
+[
+  {
+    "turn": 0,
+    "policy": [
+      "contract",
+      "nnan"
+    ],
+    "result": {
+      "status": "FAIL",
+      "kernel": "guarded_mul_add",
+      "counterexample": {
+        "input": "a=NaN",
+        "expected": 0.0,
+        "actual": "NaN"
+      },
+      "policy": [
+        "contract",
+        "nnan"
+      ],
+      "llvm_ir": "/workspace/irguard/guarded_mul_add.agent.contract-nnan.opt.ll",
+      "ptx": "/workspace/irguard/guarded_mul_add.agent.contract-nnan.opt.ptx"
+    },
+    "feedback": {
+      "status": "VERIFICATION FAILED",
+      "counterexample": {
+        "input": "a=NaN",
+        "expected": 0.0,
+        "actual": "NaN"
+      }
+    },
+    "proposal": {
+      "policy": [
+        "contract"
+      ],
+      "hypothesis": "Remove nnan because it incorrectly assumes a is never NaN, causing the required NaN guard to be optimized away. Keep contract to allow FMA contraction for finite inputs."
+    },
+    "usage": {
+      "input_tokens": 236,
+      "output_tokens": 109
+    }
+  },
+  {
+    "turn": 1,
+    "policy": [
+      "contract"
+    ],
+    "result": {
+      "status": "PASS",
+      "kernel": "guarded_mul_add",
+      "policy": [
+        "contract"
+      ],
+      "llvm_ir": "/workspace/irguard/guarded_mul_add.agent.contract.opt.ll",
+      "ptx": "/workspace/irguard/guarded_mul_add.agent.contract.opt.ptx"
+    }
+  }
+]
